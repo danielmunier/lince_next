@@ -4,10 +4,11 @@ const Hero = () => {
   return (
     <section
       style={{
-        backgroundImage: `url(${HeroBg.src})`, // Corrigido para suportar Next.js
+        backgroundImage: `url(${HeroBg.src})`, 
+        
       }}
       className="bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center text-white"
-      id="hero"
+      id="hero" 
     >
       <div className="container" data-aos="fade-up">
         <div
