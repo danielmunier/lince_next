@@ -5,6 +5,8 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Clients from "./components/Clients";
 import SwiperLogos from "./components/SwiperLogos";
+import Contact from "./components/Contact";
+import Footer from "./components/ui/footer";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <Services/>
       <Clients/>
       <SwiperLogos/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }

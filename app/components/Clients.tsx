@@ -12,7 +12,7 @@ const Clients = () => {
                     height={400} />
             </div>
             <div className="flex flex-col gap-4">
-                <h3 className="text-5xl text">Principais parceiros</h3>
+                <h3 className="text-4xl text">Principais parceiros</h3>
                 <p className="">Além de possuirmos um time de profissionais capacitados, a empresa conta com parceiros de negócios, tais como: Bravamar, R&D Technologies, Vertical Flight, Omini táxi Aéreo, Costa do Sol, PetroMaterials, Wison, Grupo Cobra, entre outros.
                 </p>
 

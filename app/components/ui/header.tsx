@@ -21,7 +21,7 @@ const Header = () => {
         <>
             <header
                 id="header"
-                className={`fixed top-0 left-0 w-full px-4 py-3 transition-colors duration-300 ${
+                className={`fixed top-0 left-0 w-full px-4 py-3 transition-colors duration-300 z-10 ${
                     isScrolled ? "bg-black/80 backdrop-blur-md" : "bg-transparent"
                 }`}
             >
