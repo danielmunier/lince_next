@@ -49,7 +49,7 @@ const About = () => {
             <Image
               src={Meeting}
               alt="Sobre a Lince Corporate"
-              className="rounded-lg"
+              className=""
               width={1500}
               height={400}
               priority

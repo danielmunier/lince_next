@@ -20,7 +20,7 @@ const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="shadow-lg p-6 rounded-lg">
+          <div className="shadow-lg p-6">
             <div className="mb-4">
               <div className="flex items-center text-gray-700 mb-4">
                 <i className="bi bi-geo-alt text-2xl text-blue-500 mr-3"></i>
@@ -50,7 +50,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="lg:col-span-2 bg-white shadow-lg p-6 rounded-lg">
+          <div className="lg:col-span-2 bg-white shadow-lg p-6">
             <form
               action="https://lince.onrender.com/"
               method="post"
@@ -60,14 +60,14 @@ const Contact = () => {
                 <input
                   type="text"
                   name="name"
-                  className="form-input w-full border border-gray-300 p-3 rounded-lg"
+                  className="form-input w-full border border-gray-300 p-3"
                   placeholder="Nome"
                   required
                 />
                 <input
                   type="email"
                   name="email"
-                  className="form-input w-full border border-gray-300 p-3 rounded-lg"
+                  className="form-input w-full border border-gray-300 p-3"
                   placeholder="Email"
                   required
                 />
@@ -75,13 +75,13 @@ const Contact = () => {
               <input
                 type="text"
                 name="assunto"
-                className="form-input w-full border border-gray-300 p-3 rounded-lg"
+                className="form-input w-full border border-gray-300 p-3"
                 placeholder="Assunto"
                 required
               />
               <textarea
                 name="mensagem"
-                className="form-textarea w-full border border-gray-300 p-3 rounded-lg"
+                className="form-textarea w-full border border-gray-300 p-3"
                 placeholder="Mensagem"
                 required
               ></textarea>

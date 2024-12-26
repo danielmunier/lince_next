@@ -48,14 +48,17 @@ const SwiperLogos = () => {
         onSwiper={(swiper) => console.log(swiper)}
       >
         {[client1, client2, client3, client4, client5, client6, client7, client8, client9, client10, client11, client12, client13].map((client, index) => (
-          <SwiperSlide 
-          key={index}>
-            <Image width={90} height={90} src={client} alt={`client${index + 1}`} />
+          <SwiperSlide
+            key={index}>
+            <div className='h-24 flex items-center justify-center'>
+              <Image width={90} height={90} src={client} alt={`client${index + 1}`} />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
     </div>
-  )}
+  )
+}
 
 
 export default SwiperLogos
