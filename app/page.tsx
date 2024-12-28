@@ -10,15 +10,13 @@ import Footer from "./components/ui/footer";
 
 export default function Home() {
   return (
-    <div className="">
-      <Header/>
-      <Hero/>
-      <About/>
-      <Services/>
-      <Clients/>
-      <SwiperLogos/>
-      <Contact/>
-      <Footer/>
-    </div>
+    <>
+      <Hero />
+      <About />
+      <Services />
+      <Clients />
+      <SwiperLogos />
+      <Contact />
+    </>
   );
 }
