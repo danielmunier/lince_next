@@ -1,7 +1,8 @@
-"use client"
-import React from 'react';
-import Container from '@/app/components/ui/Container';
-import { usePathname } from 'next/navigation';
+// components/JobDetails.tsx
+"use client";
+
+import { usePathname } from "next/navigation";
+import React from "react";
 
 const jobListings = [
   {
@@ -27,31 +28,23 @@ const jobListings = [
   },
 ];
 
-export default function JobDetailPage() {
+const JobDetails = ()  => {
   const pathname = usePathname();
   const id = pathname.split('/').pop();
   const job = jobListings.find((job) => job.id === parseInt(id as string));
 
   if (!job) {
-    return (
-      <Container>
-        <div className="container mx-auto py-8">
-          <h1 className="text-3xl font-bold mb-6">Vaga não encontrada</h1>
-        </div>
-      </Container>
-    );
+    return <h1 className="text-3xl font-bold mb-6">Vaga não encontrada</h1>;
   }
 
   return (
-    <div className="flex flex-col min-h-screen">
-      <Container>
-        <div className="container mx-auto py-8">
-          <h1 className="text-3xl font-bold mb-6">{job.title}</h1>
-          <p className="text-gray-700 mb-4">{job.description}</p>
-          <p className="text-gray-500 mb-4">{job.location}</p>
-          <p className="text-gray-600">{job.details}</p>
-        </div>
-      </Container>
-    </div>
+    <>
+      <h1 className="text-3xl font-bold mb-6">{job.title}</h1>
+      <p className="text-gray-700 mb-4">{job.description}</p>
+      <p className="text-gray-500 mb-4">{job.location}</p>
+      <p className="text-gray-600">{job.details}</p>
+    </>
   );
 }
+
+export default JobDetails

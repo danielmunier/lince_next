@@ -1,5 +1,5 @@
 import { FaPlane, FaHandshake, FaBusinessTime, FaStethoscope, FaHome } from 'react-icons/fa';
-import ServiceItem from "./ui/service";
+import ServiceItem from "./ui/serviceItem";
 
 const servicesData = [
   {
