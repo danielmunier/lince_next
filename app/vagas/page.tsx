@@ -2,7 +2,14 @@ import React from 'react';
 import Link from 'next/link';
 import Container from '../components/ui/Container';
 
-const jobListings = [
+interface JobListing {
+  id: number;
+  title: string;
+  description: string;
+  location: string;
+}
+
+const jobListings: JobListing[] = [
   
 ];
 
