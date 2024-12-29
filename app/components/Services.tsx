@@ -1,5 +1,6 @@
 import { FaPlane, FaHandshake, FaBusinessTime, FaStethoscope, FaHome } from 'react-icons/fa';
 import ServiceItem from "./ui/serviceItem";
+import { MdBusiness } from 'react-icons/md';
 
 const servicesData = [
   {
@@ -41,7 +42,8 @@ const servicesData = [
     id: "Lince",
     title: "Lince",
     description:
-      "A Lince Corporate é constituída por empresas capacitadas, nossa missão é otimizar o desempenho operacional e fornecer serviços de alta qualidade aos clientes."
+      "A Lince Corporate é constituída por empresas capacitadas, nossa missão é otimizar o desempenho operacional e fornecer serviços de alta qualidade aos clientes.",
+      icon: <MdBusiness/>
   }
 ];
 

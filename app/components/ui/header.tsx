@@ -7,10 +7,10 @@ import Logo from '@/app/assets/logo.png';
 import Link from 'next/link';
 
 const routes = [
-  { href: "#hero", label: "Home" },
-  { href: "#about", label: "Sobre" },
-  { href: "#services", label: "Serviços" },
-  { href: "/vagas", label: "Vagas" }
+  { href: "/", label: "Home" },
+  { href: "/#about", label: "Sobre" },
+  { href: "/#services", label: "Serviços" },
+  { href: "/vagas", label: "Trabalhe conosco" }
 ];
 
 const Header = () => {
@@ -38,19 +38,15 @@ const Header = () => {
   return (
     <header
       id="header"
-      className={`fixed top-0 left-0 w-full px-4 py-3 transition-colors duration-300 ${
-        isScrolled ? "bg-black/80 backdrop-blur-md" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 w-full px-4 py-3 transition-colors duration-300 ${isScrolled ? "bg-black/80 backdrop-blur-md" : "bg-transparent"
+        }`}
     >
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         <div className="flex items-center space-x-3">
-          <Image src={Logo} width={50} alt="Logo" />
-          <a
-            href="/"
-            className="text-white font-extrabold hover:text-yellow-500 transition-colors"
-          >
-            Lince
-          </a>
+          <Link href={"/"}>
+            <Image src={Logo} width={150} alt="Logo" />
+          </Link>
+
         </div>
 
         <button
@@ -62,9 +58,8 @@ const Header = () => {
         </button>
 
         <nav
-          className={`flex-col lg:flex-row lg:flex ${
-            isMenuOpen ? "flex" : "hidden"
-          } lg:space-x-6 lg:items-center`}
+          className={`flex-col lg:flex-row lg:flex ${isMenuOpen ? "flex" : "hidden"
+            } lg:space-x-6 lg:items-center`}
         >
           <ul className="flex flex-col lg:flex-row lg:space-x-6 space-y-4 lg:space-y-0">
             {routes.map((route, index) => (
