@@ -11,11 +11,11 @@ const Footer = () => {
               Lince<span className="text-yellow-500">.</span>
             </h3>
             <p className="mt-4 text-sm">
-              Av. Rio Branco, 156, Sala 703 - Centro, Rio de Janeiro - RJ,
-              20010-000, Brasil
+              Av. Nilo Peçanha, 50, Sala 302 - Centro, Rio de Janeiro - RJ,
+              20020-906, Brasil
             </p>
             <p className="text-sm">
-              <strong>Telefone:</strong> 21 2487-5685 | 21 96731-5536
+              <strong>Telefone:</strong> 21 97804-9339 | 21 96731-5536
             </p>
             <p className="text-sm">
               <strong>Email:</strong> kellylince@gmail.com
