@@ -27,8 +27,8 @@ const Contact = () => {
                 <h4 className="text-lg font-bold">Localização</h4>
               </div>
               <p className="text-gray-600">
-                Av. Rio Branco, 156, Sala 703 - Centro, Rio de Janeiro - RJ,
-                20010-000, Brasil
+                Av. Nilo Peçanha, 50, Sala 302 - Centro, Rio de Janeiro - RJ,
+                20020-906, Brasil
               </p>
             </div>
 
@@ -46,7 +46,8 @@ const Contact = () => {
                 <h4 className="text-lg font-bold">Telefone</h4>
               </div>
               <p className="text-gray-600">+55 21 96731-5536</p>
-              <p className="text-gray-600">21 2487-5685</p>
+              {/* <p className="text-gray-600">21 2487-5685</p> */}
+              <p className="text-gray-600">+55 21 97804-9339</p>
             </div>
           </div>
 
